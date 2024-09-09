@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-botao',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './botao.component.scss'
 })
 export class BotaoComponent {
+
+  @Input() public appTexto!: string;
+
+  constructor(){}
 
 }
