@@ -2,14 +2,7 @@
   <h2>Estudos do dia</h2>
   <ul>
     @for(item of tarefas; track item){
-      <li class="item">
-        <h3>
-          {{item.tarefa}}
-        </h3>
-        <span>
-          {{ item.tempo }}
-        </span>
-      </li>
+      <app-item [appTarefa]="item"/>
     }
   </ul>
 </aside>
