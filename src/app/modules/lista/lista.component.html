@@ -1,7 +1,7 @@
 <aside class="listaTarefas">
   <h2>Estudos do dia</h2>
   <ul>
-    @for(item of tarefas; track item){
+    @for(item of appLista; track item){
       <app-item [appTarefa]="item"/>
     }
   </ul>

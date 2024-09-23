@@ -1,9 +1,5 @@
 import { Component, Input } from '@angular/core';
-
-interface Tarefas{
-  tarefa:string;
-  tempo:string
-}
+import { Itarefa } from '../../../Itypes/Itarefa';
 
 @Component({
   selector: 'app-item',
@@ -14,8 +10,7 @@ interface Tarefas{
 })
 export class ItemComponent {
 
-  @Input() public appTarefa!: Tarefas;
-  //@Input() public appTempo!: string;
+  @Input() public appTarefa!: Itarefa;
 
 
 constructor(){}

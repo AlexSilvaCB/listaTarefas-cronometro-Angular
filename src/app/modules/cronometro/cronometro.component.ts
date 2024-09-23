@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { FormularioComponent } from '../../modules/formulario/formulario.component';
-import { ListaComponent } from '../../modules/lista/lista.component';
+import { BotaoComponent } from '../botao/botao.component';
+import { RelogioComponent } from './relogio/relogio.component';
 
 @Component({
   selector: 'app-cronometro',
   standalone: true,
-  imports: [FormularioComponent, ListaComponent],
+  imports: [BotaoComponent, RelogioComponent],
   templateUrl: './cronometro.component.html',
   styleUrl: './cronometro.component.scss'
 })

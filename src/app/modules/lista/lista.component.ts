@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ItemComponent } from './item/item.component';
+import { Itarefa } from '../../Itypes/Itarefa';
 
 @Component({
   selector: 'app-lista',
@@ -8,19 +9,10 @@ import { ItemComponent } from './item/item.component';
   templateUrl: './lista.component.html',
   styleUrl: './lista.component.scss'
 })
-export class ListaComponent {
+export class ListaComponent{
 
- tarefas = [{
-    tarefa:'Angular',
-    tempo:'02:00:00'
-  }, {
-    tarefa:'Typescript',
-    tempo:'01:00:00'
-  }, {
-    tarefa:'Javascript',
-    tempo:'01:30:00'
-  }]
+  @Input() appLista!:Itarefa[];
 
-  constructor(){}
-
+  constructor(){
+  }
 }

@@ -10,6 +10,7 @@ import { Component, Input } from '@angular/core';
 export class BotaoComponent {
 
   @Input() public appTexto!: string;
+  @Input() public appType?:string = "button"
 
   constructor(){}
 
