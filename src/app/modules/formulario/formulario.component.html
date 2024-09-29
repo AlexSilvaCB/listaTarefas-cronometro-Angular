@@ -1,4 +1,6 @@
-<form class="novaTarefa" [formGroup]="tarefas">
+<mat-card appearance="outlined"  class="cardTarefa">
+
+<form  class="novaTarefa" [formGroup]="tarefas">
   <div class="inputContainer">
     <label htmlFor="tarefa">
       Adicionar um novo estudo
@@ -21,5 +23,7 @@
     formControlName="tempo"
     >
   </div>
-    <app-botao appTexto="Adicionar" (click)="newTarefa()"/>
+    <app-botao btnTexto="Adicionar" (click)="newTarefa()"/>
 </form>
+
+</mat-card>

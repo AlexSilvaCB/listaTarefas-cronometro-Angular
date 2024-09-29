@@ -8,9 +8,10 @@
 
     .relogioWrapper {
       align-items: center;
-      background-color: #7687A1;
+      background: #14223F;
       border-radius: 10px;
-      box-shadow: 2px 4px 4px #0000009F;
+      border: 1px solid rgba(206, 206, 206, 0.87);
+      box-shadow: 2px 2px 4px #9797979f;
       box-sizing: border-box;
       display: flex;
       font-size: 5rem;
@@ -42,7 +43,6 @@
     }
 
     @media screen and (min-width:1280px) {
-      top: -12vh;
 
       .relogioWrapper{
         font-size: 10rem;

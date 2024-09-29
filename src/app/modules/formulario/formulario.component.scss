@@ -1,13 +1,15 @@
 :host{
 
+  .cardTarefa{
+    background: #14223F;
+    box-shadow: 2px 4px 4px #6666669f;
+    padding: 12px;
+
 .novaTarefa {
   display:flex;
   flex-direction: column;
   grid-area: nova-tarefa;
-  background-color: #7687A1;
-  border-radius: 10px;
-  box-shadow: 2px 4px 4px #0000009F;
-  padding: 12px;
+
 
   .inputContainer {
     display: flex;
@@ -26,7 +28,7 @@
       box-sizing: border-box;
       border: unset;
       border-radius: 5px;
-      background-color: #5D677C;
+      background-color: #5d677c80;
       box-shadow: 0px 2px 4px #2D2B2B9F inset;
 
       &::placeholder {
@@ -61,4 +63,5 @@
     }
   }
 }
+  }
 }

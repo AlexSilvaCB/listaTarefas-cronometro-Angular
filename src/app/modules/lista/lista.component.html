@@ -1,8 +1,8 @@
 <aside class="listaTarefas">
   <h2>Estudos do dia</h2>
-  <ul>
-    @for(item of appLista; track item){
-      <app-item [appTarefa]="item"/>
+  <mat-list class="ulLista">
+    @for(item of appInputLista; track item.tarefa){
+      <app-item [appInputItem]="item" (itemOutputSelecionada)="updateTarefas($event)" />
     }
-  </ul>
+  </mat-list>
 </aside>

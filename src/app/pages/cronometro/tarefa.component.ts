@@ -14,13 +14,39 @@ import { Itarefa } from '../../Itypes/Itarefa';
 export class TarefaComponent {
 
  public tarefasApp: Itarefa[] = []
+ public sendTempo!: string
+ public ultimatarefa!:string
 
-  constructor(){
-  }
-
+  constructor(){ }
 
   sendForm(form:Itarefa){
-    this.tarefasApp.push({tarefa:form.tarefa, tempo:form.tempo})
+    this.tarefasApp.push(form)
   }
+
+  updateTarefa(itemLista: Itarefa){
+    this.tarefasApp = this.tarefasApp.map(tarefaUp => {
+        return {...tarefaUp, selecionado: tarefaUp.tarefa === itemLista.tarefa ? true : false};
+      }
+  )
+  this.ultimatarefa = itemLista.tarefa
+  this.sendTempo = itemLista.tempo
+  }
+
+  finalizarTarefa(concluido:boolean){
+
+    if (concluido) {
+      this.tarefasApp = this.tarefasApp.map(tarefaUp => {
+        if(tarefaUp.tarefa === this.ultimatarefa)
+          {
+        return {...tarefaUp, concluido: true};
+      }
+        return tarefaUp
+      })
+      return;
+    }
+    }
+
+
+
 
 }

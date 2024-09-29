@@ -1,8 +1,13 @@
-<li class="item">
-  <h3>
-    {{ appTarefa.tarefa }}
-  </h3>
-  <span>
-    {{ appTarefa.tempo }}
-  </span>
-</li>
+<mat-list-item class="item" [ngClass]="{'itemSelecionado': appInputItem.selecionado, 'itemCompletado':appInputItem.concluido}" (click)="selecionarTarefa(appInputItem)">
+    <h3>
+      {{ appInputItem.tarefa }}
+    </h3>
+    <span>
+      {{ appInputItem.tempo }}
+    </span>
+    @if( appInputItem.concluido ){
+    <span class="concluido" aria-label="tarefa completada"></span>
+    }
+  </mat-list-item>
+<mat-divider></mat-divider>
+

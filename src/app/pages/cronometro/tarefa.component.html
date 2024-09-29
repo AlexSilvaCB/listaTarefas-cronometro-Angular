@@ -1,5 +1,5 @@
 <div class="AppStyle">
-  <app-formulario (formLista)="sendForm($event)"/>
-  <app-lista [appLista]="tarefasApp"/>
-  <app-cronometro />
+  <app-formulario (formLista)Output="sendForm($event)" />
+  <app-lista [appInputLista]="tarefasApp" (listaOutputSelecionada)="updateTarefa($event)"/>
+  <app-cronometro [appInputCronometro]="sendTempo" (tarefaConcluidaOutput)="finalizarTarefa($event)"/>
 </div>
