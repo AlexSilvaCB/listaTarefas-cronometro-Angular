@@ -1,27 +1,23 @@
-# CronometroAngular
+## Angular - WebApp Responsivo - Lista de Tarefas com cronômetro regressivo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+<p>Este projeto tem como objetivo criar uma aplicação Angular, focada na criação de componentes reutilizáveis, escaláveis e dinâmicos.</p>
+<p>A aplicação permite que o usuário insira o nome de uma tarefa e o tempo desejado para sua realização através de um formulário. O usuário pode adicionar uma ou várias tarefas, gerando uma lista. Em seguida, é possível selecionar uma tarefa e iniciar um temporizador regressivo. Quando o tempo se esgota, a tarefa é marcada como concluída com um check.</p>
 
-## Development server
+<div align="center">
+  <p>Tela Cheia</p>
+ <img width="800px" src="screenshot/telaInicioAngular.jpg" />
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<div align="center">
+ <img width="800px" src="screenshot/telaInicioAngular-tempo.jpg" />
+</div>
 
-## Code scaffolding
+</br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<div align="center">
+  <p>Telas Responsivas</p>
+  <div align="center">
+   <img width="600px" src="screenshot/telaInicioAngular-responsivo.jpg" />
+   <img width="600px" src="screenshot/telaInicioAngular-tempo-responsivo.jpg" />
+ </div>
+</div>
